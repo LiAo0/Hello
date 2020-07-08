@@ -31,5 +31,6 @@ public class CacheImmutale {
             // 如果有相同实例，则直接返回缓存的实例
             
         }
+        return null;
     }
 }
