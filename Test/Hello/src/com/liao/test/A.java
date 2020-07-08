@@ -98,7 +98,7 @@ public class A extends B {
             String strs = (String) onb;
             System.out.println(strs);
         }*/
-
+		// 测试
 
     }
 }
