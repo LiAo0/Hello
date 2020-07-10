@@ -7,11 +7,11 @@ public class Triangle extends Shap {
 
     public Triangle(String color, double a, double b, double c) {
         super(color);
-
+        this.setSides(a, b, c);
     }
 
     public void setSides(double a, double b, double c) {
-        if (a > b + c && b > a + c && c > a + b){
+        if (a < (b + c) && b < (a + c) && c < (a + b)){
             this.a = a;
             this.b = b;
             this.c = c;
