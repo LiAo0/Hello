@@ -1,4 +1,4 @@
-package com.liao.test01;
+package com.liao.treadsafe;
 
 /**
  * TODO: 使用finalize方法复活自身
