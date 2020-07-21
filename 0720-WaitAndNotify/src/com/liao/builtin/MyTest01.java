@@ -16,7 +16,7 @@ public class MyTest01 {
         // 使用工厂类 获取线程池对象
         ExecutorService es = Executors.newFixedThreadPool(3);
 
-        // 提交任务 线程数量不做限制
+        // 提交任务
         for (int i = 0; i < 100; i++) {
             es.submit(() -> {
                 System.out.println("------>" + Thread.currentThread().getName());

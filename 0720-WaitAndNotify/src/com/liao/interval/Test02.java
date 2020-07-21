@@ -15,9 +15,9 @@ public class Test02 {
         ScheduledExecutorService es = Executors.newScheduledThreadPool(3, (r) -> {
             return new Thread(r, "Mr.Wick");
         });
-        /*// 延迟一秒执行
+        // 延迟一秒执行
         // 延迟第一次执行的时间
-        // 循环执行的时间 从开始执行记时
+        // 循环执行的时间 从上个线程开始执行记时
         es.scheduleAtFixedRate(() -> {
             try {
                 Thread.sleep(1500);
@@ -25,7 +25,7 @@ public class Test02 {
                 e.printStackTrace();
             }
             System.out.println(Thread.currentThread().getName());
-        }, 1,2, TimeUnit.SECONDS);*/
+        }, 1,2, TimeUnit.SECONDS);
 
         // 延迟一秒执行
         // 延迟第一次执行的时间

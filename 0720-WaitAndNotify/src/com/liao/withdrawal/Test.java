@@ -11,7 +11,6 @@ import java.util.concurrent.Executors;
  */
 public class Test {
     public static void main(String[] args) {
-
         // 取款金额
         int money = 1000;
 

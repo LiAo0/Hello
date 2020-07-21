@@ -14,7 +14,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class MyTest02 {
     public static void main(String[] args) {
         // 使用工厂类 获取线程池对象
-        /*ExecutorService es = Executors.newSingleThreadExecutor();
+        ExecutorService es = Executors.newSingleThreadExecutor();
 
         // 提交任务 线程数量不做限制
         for (int i = 0; i < 100; i++) {
@@ -23,9 +23,9 @@ public class MyTest02 {
             });
         }
 
-    }*/
-        test01();
     }
+        // test01();
+    //}
     private static void test01() {
         // 使用工厂类 获取线程池对象
         AtomicInteger a = new AtomicInteger(1);
