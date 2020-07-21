@@ -2,6 +2,7 @@ package com.liao.waitAndNotify;
 
 /**
  * TODO: 线程通信
+ * Lambda 表达式
  *
  * @author LiAo
  * @date 2020/7/17 11:49
@@ -14,15 +15,15 @@ public class WaitAndNotfiy {
         new Thread(() -> {
             while (true) {
                 synchronized (obj) {
-                    System.out.println("我要买包子");
-                    // 进入等待状态
                     try {
+                        System.out.println("我要买包子");
+                        // 进入等待状态
                         obj.wait();
+                        System.out.println("包子真好吃");
+                        System.out.println("-----------------------------");
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    System.out.println("包子真好吃");
-                    System.out.println("-----------------------------");
                 }
             }
         }).start();
@@ -32,7 +33,6 @@ public class WaitAndNotfiy {
             while (true) {
                 try {
                     Thread.sleep(2000);
-
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
