@@ -6,7 +6,7 @@ package com.liao.treadsafe;
  * @author LiAo
  * @date 2020/7/15 17:41
  */
-public class Test01 extends Thread{
+public class Test01{
     public static void main(String[] args) {
 
         // 通过构造方法为线程名称赋值
